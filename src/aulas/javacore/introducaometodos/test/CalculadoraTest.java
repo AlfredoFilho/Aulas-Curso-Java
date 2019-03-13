@@ -9,7 +9,7 @@ import aulas.javacore.introducaometodos.classes.Calculadora;
 
 /**
  *
- * @author a193532
+ * @author Alfredo Albélis
  */
 public class CalculadoraTest {
     public static void main(String[] args) {
@@ -30,5 +30,9 @@ public class CalculadoraTest {
         
         calc.imprimeDoisNumerosDivididos(10, 0);
         System.out.println("\nContinuação...");
+        
+        int[] sumeros = {1,2,3,4,5};
+        calc.somaArray(sumeros);
+        calc.somaVarArgs(1,2,3,4,5);
     }   
 }

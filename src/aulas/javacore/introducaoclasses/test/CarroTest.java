@@ -9,7 +9,7 @@ import aulas.javacore.introducaoclasses.classes.Carro;
 
 /**
  *
- * @author a193532
+ * @author Alfredo Albélis
  */
 public class CarroTest {
     public static void main(String[] args) {

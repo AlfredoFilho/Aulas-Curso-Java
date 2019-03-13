@@ -7,7 +7,7 @@ package aulas.introducao.arrays;
 
 /**
  *
- * @author a193532
+ * @author Alfredo Albélis
  */
 public class Arrays6 {
     public static void main(String[] args) {

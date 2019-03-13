@@ -7,7 +7,7 @@ package aulas.introducao.operadores;
 
 /**
  *
- * @author a193532
+ * @author Alfredo Albélis
  */
 public class Operadores {
 	public static void main(String[] args) {

@@ -9,7 +9,7 @@ import aulas.javacore.introducaometodos.classes.Professor;
 
 /**
  *
- * @author a193532
+ * @author Alfredo Albélis
  */
 public class ProfessorTest {
     public static void main(String[] args) {
@@ -25,10 +25,9 @@ public class ProfessorTest {
         prof2.nome = "Joana";
         prof2.RG = "987654321";
         
-        System.out.println("Dentro do professor test");
-        System.out.println(prof.nome);
-        prof.imprime(prof);
-        System.out.println(prof.nome);
+        prof.imprime();
+        prof2.imprime();
+
         
 //        prof.imprime(prof2);
     }

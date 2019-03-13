@@ -7,7 +7,7 @@ package aulas.introducao.exercicios;
 
 /**
  *
- * @author a193532
+ * @author Alfredo Albélis
  */
 public class ExercicioControleFluxo3 {
     

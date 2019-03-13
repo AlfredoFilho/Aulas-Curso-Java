@@ -7,7 +7,7 @@ package aulas.javacore.introducaoclasses.classes;
 
 /**
  *
- * @author a193532
+ * @author Alfredo Albélis
  */
 public class Estudante {
     public String nome;

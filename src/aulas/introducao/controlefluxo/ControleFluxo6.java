@@ -7,7 +7,7 @@ package aulas.introducao.controlefluxo;
 
 /**
  *
- * @author a193532
+ * @author Alfredo Albélis
  */
 public class ControleFluxo6 {
     public static void main(String[] args) {

@@ -9,7 +9,7 @@ import aulas.javacore.introducaoclasses.classes.Estudante;
 
 /**
  *
- * @author a193532
+ * @author Alfredo Albélis
  */
 public class Estudantetest {
     public static void main(String[] args) {

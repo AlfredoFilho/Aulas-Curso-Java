@@ -9,7 +9,7 @@ import aulas.javacore.introducaometodos.classes.Calculadora;
 
 /**
  *
- * @author a193532
+ * @author Alfredo Albélis
  */
 public class ParametrosTest {
     public static void main(String[] args) {

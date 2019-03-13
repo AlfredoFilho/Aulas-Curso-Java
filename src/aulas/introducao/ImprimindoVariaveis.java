@@ -7,7 +7,7 @@ package aulas.introducao;
 
 /**
  *
- * @author a193532
+ * @author Alfredo Albélis
  */
 public class ImprimindoVariaveis {
 	public static void main(String[] args) {

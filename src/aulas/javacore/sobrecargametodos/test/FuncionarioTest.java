@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aulas.javacore.introducaoclasses.classes;
+package aulas.javacore.sobrecargametodos.test;
 
 /**
  *
  * @author Alfredo Albélis
  */
-public class Carro {
-    public String placa;
-    public String modelo;
-    public float velocidadeMaxima;
-    
+public class FuncionarioTest {
     
 }
