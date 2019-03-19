@@ -24,6 +24,7 @@ public class Aluno {
     }
     
     public void print(){
+        System.out.println("------------------Relatório de Alunos-------------------");
         System.out.println("Nome: " + this.nome);
         System.out.println("idade: " + this.idade);
         if(this.seminario != null){

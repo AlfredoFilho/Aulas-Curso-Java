@@ -5,6 +5,8 @@
  */
 package aulas.javacore.associacao.classes;
 
+import sun.security.util.Length;
+
 /**
  *
  * @author Alfredo Albélis
@@ -24,12 +26,18 @@ public class Professor {
     }
     
     public void print(){
+        System.out.println("------------------Relatório de Professores-------------------");
         System.out.println("Nome: " + this.nome);
-        System.out.println("Especialização" + this.especialidade);
-        System.out.println("Seminarios participantes ");
-        for(Seminario semi : seminario){
-            System.out.println(semi.getTitulo() + " ");
+        System.out.println("Especialização: " + this.especialidade);
+        System.out.println("Seminarios participantes:");
+        
+        if(this.seminario != null && seminario.length != 0){
+            for(Seminario semi : seminario){
+                System.out.println("- " + semi.getTitulo());
+            }
+            return;
         }
+        System.out.println("Professsor não vinculado a nenhum seminário");
     }
     
     public Seminario[] getSeminario() {

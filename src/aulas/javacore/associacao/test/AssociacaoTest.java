@@ -14,9 +14,9 @@ import aulas.javacore.associacao.classes.*;
 public class AssociacaoTest {
     public static void main(String[] args) {
         Aluno aluno = new Aluno("Alfredo Albélis", 19);  
-        Aluno aluno2 = new Aluno("Albélis Alfredo", 91);  
+        Aluno aluno2 = new Aluno("Melissa Betina", 91);  
         Seminario sem = new Seminario("Exercicio associação");
-        Professor prof = new Professor("Joao", "Dominar todo o conteudo");
+        Professor prof = new Professor("João", "Dominar todo o conteudo");
         Local local = new Local("Rua l", "Paulinia");
         
         aluno.setSeminario(sem);
@@ -29,5 +29,10 @@ public class AssociacaoTest {
         Seminario semArray[] = new Seminario[1];
         semArray[0] = sem;
         prof.setSeminario(semArray);
+        
+        sem.print();
+        prof.print();
+        aluno.print();
+        local.print();
     }
 }

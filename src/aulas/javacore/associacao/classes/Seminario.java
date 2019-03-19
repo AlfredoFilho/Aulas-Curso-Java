@@ -10,7 +10,7 @@ package aulas.javacore.associacao.classes;
  * @author Alfredo Albélis
  */
 
-//Crie um Sistema que gerenia seminários
+//Crie um Sistema que gerencie seminários
 //Deverá cadastrar os seminários, cadastrar os alunos, cadastrar os professores e cadastrar um local
 //Um aluno podera estar em apenas um seminario
 //um seminario poderá ter nenhum ou vários alunos
@@ -45,12 +45,28 @@ public class Seminario {
     }
     
     public void print(){
+        System.out.println("------------------Relatório de Seminários-------------------");
         System.out.println("Titulo: " + this.titulo);
-        System.out.println("Professor palestrante " + this.professor.getNome());
-        System.out.println("Local, rua" + this.local.getRua() + "Bairro: " + this.local.getBairro());
-        System.out.println("Alunos participante");
-        for(Aluno aluno : alunos)
-            System.out.println("Nome " + aluno.getNome());
+        
+        if(this.professor != null){
+            System.out.println("Professor palestrante: " + this.professor.getNome());
+        }else{
+            System.out.println("Nenhum professor cadastrado para esse seminário");
+        }
+       
+        if(this.local != null){
+            System.out.println("Local: " + this.local.getRua() + " Bairro: " + this.local.getBairro());
+        }else{
+            System.out.println("Nenhum local cadastrado para esse seminário");
+        }
+        
+        if(alunos != null && alunos.length != 0){
+            System.out.println("Alunos participantes:");
+            for(Aluno aluno : alunos){
+                System.out.println("- Nome: " + aluno.getNome());
+            }
+            return;
+        }System.out.println("Nenhum aluno cadastrado");
     }
     
     public Professor getProfessor() {

@@ -3,30 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aulas.javacore.associacao.classes;
+package aulas.javacore.heranca.classes;
 
 /**
  *
  * @author Alfredo Albélis
  */
-public class Local {
+public class Endereco {
     private String rua;
     private String bairro;
 
-    public Local(String rua, String bairro) {
-        this.rua = rua;
-        this.bairro = bairro;
-    }
-
-    public Local() {
-    }
-
-    public void print(){
-        System.out.println("------------------Relatório de Local-------------------");
-        System.out.println("Rua: " + this.rua);
-        System.out.println("Bairro: " + this.bairro);
-    }
-    
     public String getRua() {
         return rua;
     }
@@ -42,6 +28,5 @@ public class Local {
     public void setBairro(String bairro) {
         this.bairro = bairro;
     }
-    
     
 }
