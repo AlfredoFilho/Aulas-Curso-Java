@@ -13,23 +13,23 @@ import aulas.javacore.heranca.classes.*;
  */
 public class HerancaTest {
     public static void main(String[] args) {
-        Pessoa p = new Pessoa();
+        //Pessoa p = new Pessoa("Alfredo");
         Endereco end = new Endereco();
-        Funcionario func = new Funcionario();
+        Funcionario func = new Funcionario("Alberto");
         
-        p.setNome("Alfredo");
-        p.setCpf("12345678911");
+        //p.setCpf("12345678911");
         
         end.setRua("1 de Abril");
         end.setBairro("Tupini");
         
-        func.setNome("Alberto");
         func.setCpf("12345");
         func.setEndereco(end);
         func.setSalario(1500);
         
-        p.setEndereco(end);
+        //p.setEndereco(end);
         
-        p.Imprime();
+        //p.imprime();
+        System.out.println("---------------------");
+        //func.imprime();
     }
 }
