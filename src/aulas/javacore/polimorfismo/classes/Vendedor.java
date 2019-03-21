@@ -33,6 +33,14 @@ public class Vendedor extends Funcionario {
         this.salario = salario;
     }
 
+    public double getTotalVendas() {
+        return totalVendas;
+    }
+
+    public void setTotalVendas(double totalVendas) {
+        this.totalVendas = totalVendas;
+    }
+
     @Override
     public void calcularpagamento() {
         this.salario = this.salario + (totalVendas * 0.05);

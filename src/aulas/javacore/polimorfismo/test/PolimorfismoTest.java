@@ -22,10 +22,7 @@ public class PolimorfismoTest {
         r.relatorioPagamentoGenerico(g);
         System.out.println("---------------------");
         r.relatorioPagamentoGenerico(v);
-        
-        Funcionario f = g;
-        System.out.println("-----------------------");
-        System.out.println(f.getSalario());    
+           
                 
     }
 }
