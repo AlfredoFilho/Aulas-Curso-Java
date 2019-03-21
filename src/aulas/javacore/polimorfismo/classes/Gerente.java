@@ -12,8 +12,9 @@ package aulas.javacore.polimorfismo.classes;
 public class Gerente extends Funcionario {
     private double pnl;
     
-    public Gerente(String nome, double salario) {
+    public Gerente(String nome, double salario, double pnl) {
         super(nome, salario);
+        this.pnl = pnl;
     }
 
     public double getPnl() {
