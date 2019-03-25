@@ -7,11 +7,7 @@ package aulas.javacore.exception.CheckedException.test;
 
 import aulas.javacore.exception.CheckedException.classes.Leitor1;
 import aulas.javacore.exception.CheckedException.classes.Leitor2;
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
+
 
 /**
  *
