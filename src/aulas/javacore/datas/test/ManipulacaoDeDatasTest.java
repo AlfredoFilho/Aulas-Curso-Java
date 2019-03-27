@@ -13,7 +13,7 @@ import java.util.Date;
  *
  * @author Alfredo Albélis
  */
-public class ManiupulacaoDeDatasTest {
+public class ManipulacaoDeDatasTest {
     public static void main(String[] args) {
         Date date = new Date();
         date.setTime(date.getTime() + 3_600_000L);
