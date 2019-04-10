@@ -16,9 +16,25 @@ import java.util.regex.Pattern;
 public class ExpressoesRegularesTest {
     public static void main(String[] args) {
         // \d - todos os digitos
+        // \D - tudo que não for digito
+        // \s - espaços em branco
+        // \S - caractere que não é branco
+        // \w - a-z A-Z, digitos e _
+        // \W- tudo o que não for caractere de palavra
+        // []
+        // ? zero ou uma
+        // * zero ou mais
+        // + uma ou mais
+        // {n,m} n até m
+        // ()
+        // |
+        // $
+        // . coringa
         
-        String regex = "\\d";
-        String texto = "fsdfs12ss64ssfsf32s13";
+//        String regex = "0[xX]([0-9a-fA-F])+(\\s|$)";
+//        String texto = "12 0x 0x 0xFFABC 0X10G 0X1";
+        String regex = "([a-zA-Z0-9\\._-])+@([a-zA-Z])+\\.([a-zA-Z])";
+        String texto = "fulano@hotmail.com, 102abc@gmail.com, #@!abrao@mail.com, teste@gmail.com, teste@mail.com";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);
         System.out.println("Texto: " + texto);
@@ -26,7 +42,7 @@ public class ExpressoesRegularesTest {
         System.out.println("Expressão: " + matcher.pattern());
         System.out.println("posições encontradas");
         while(matcher.find()){
-            System.out.print(matcher.start() + " ");
+            System.out.println(matcher.start() + " " + matcher.group());
         }
     }
 }
