@@ -33,8 +33,11 @@ public class ExpressoesRegularesTest {
         
 //        String regex = "0[xX]([0-9a-fA-F])+(\\s|$)";
 //        String texto = "12 0x 0x 0xFFABC 0X10G 0X1";
-        String regex = "([a-zA-Z0-9\\._-])+@([a-zA-Z])+\\.([a-zA-Z])";
-        String texto = "fulano@hotmail.com, 102abc@gmail.com, #@!abrao@mail.com, teste@gmail.com, teste@mail.com";
+        //String regex = "(([\\w\\._-])+@([a-zA-Z])+\\.([a-zA-Z])+)+";
+        String regex = "\\d{2}/\\d{2}/\\d{2,4}";
+        String texto = "05/10/2010 05/05/2015 1/1/01 01/05/95";
+        System.out.println("fulano@hotmail.com".matches(regex));
+        
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);
         System.out.println("Texto: " + texto);
