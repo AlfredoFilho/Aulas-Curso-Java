@@ -7,6 +7,7 @@ package aulas.javacore.io.test;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -20,8 +21,10 @@ public class FileTest {
         try {
             boolean createNewFile = file.createNewFile();
             System.out.println(createNewFile);
+            System.out.println("Existe:" + file.exists());
         } catch (IOException ex) {
-            Logger.getLogger(FileTest.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FileTest.class.getName()).log(Level.SEVERE, null, ex); 
         }
+        System.out.println(new Date(file.lastModified()));
     }
 }
